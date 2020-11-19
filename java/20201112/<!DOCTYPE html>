@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+  2 <html lang="ja">
+  3   <head>
+  4     <meta charset="UTF-8">
+  5     <title>kadai</title>
+  6   <!--  <link rel="stylesheet" type="text/css" href="main.css"> -->
+  7   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssres    et-min.css">
+  8   <link rel="stylesheet" href="main.css"/>
+  9   </head>
+ 10   <body>
+ 11     <div id="container">
+ 12     <header>
+ 13     <!--<div class="header"></div>
+ 14     -->
+ 15     <img src="images/headerImg.png">
+ 16     <h1>Sample Company</h1>
+ 17     </header>
+ 18     <main>
+ 19     <h2>About</h2>
+ 20     <About class="AboutFull">
+ 21     <div class="contents">
+ 22     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n    isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit es    se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c    ulpa qui officia deserunt mollit anim id est laborum.</p>
+ 23     </div>

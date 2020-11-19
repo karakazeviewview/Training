@@ -1,0 +1,57 @@
+1111Q3の、8行目nums[i]=n;
+が不明。
+
+setting
+sample site
+master
+save
+url github.io/sample_site/.
+
+11/12木曜 14日目　やること
+アルゴリズムを来週参照できるようにgitで管理。
+サイトの整え。
+クラスメイトの問題を解く。
+
+HEAD は、今いるブランチの最新の
+
+何日の変更だと情報価値がない。
+何をやった、という変更にすべき
+
+ssh-add
+で、一回ですむ
+
+-u オプションは、1対１のいい関係になる
+
+repository
+倉庫
+
+-b オプションは、同時にブランチ作る
+
+
+
+
+
+
+
+1 import java.util.*;
+  2 public class Ichiran{
+  3   public static void main(String[] args){
+  4     System.out.print("何人>");
+  5     int zenin=new java.util.Scanner(System.in).nextInt();
+  6     int[] score=new int[zenin];
+  7     for(int i=0;i<zenin;i++){
+  8       System.out.print((i+1)+"人目の点数>");
+  9       score[i] =new java.util.Scanner(System.in).nextInt();
+ 10       }
+ 11       System.out.println(Arrays.toString(score));
+ 12   }
+ 13 }
+ 14 
+
+
+pullはhechtanndmaergge
+
+配列は必ず
+"0"から回す！
+
+

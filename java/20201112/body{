@@ -1,0 +1,28 @@
+body{
+  2   background-color: #C0C0C0;
+  3 }
+  4 header{
+  5   position:relative;
+  6   width:100%;
+  7 }
+  8 /*
+  9 #header{
+ 10   width:960px;
+ 11   height:253px;
+ 12   background:url(../images/header_bg.png) 0 0 no-repeat;
+ 13   background-size:cover;
+ 14   color:#555;
+ 15   font-size:80px;
+ 16   text-align: center;
+ 17   line-height: 253px;
+ 18 */
+ 19 header h1{
+ 20   position: absolute;
+ 21   top:0;
+ 22   right:0;
+ 23   width:100%;
+ 24   height:100%;
+ 25   background-image:url(../images/headerImg.png);
+ 26   background-size:cover;
+ 27   box-sizing: border-box;
+ 28   padding:10%;

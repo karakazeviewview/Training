@@ -1,0 +1,35 @@
+importz java.util.*;
+  2 public class Game5W{
+  3   public static void main(String[] args){
+  4     System.out.print("いつはいくつ？>");
+  5     int itsu=new java.util.Scanner(System.in).nextInt();
+  6     int [][]data=new int[itsu][];
+  7     System.out.println();
+  8     for(int i=0;i<data.length){
+  9       System.out.print("誰が"+(i+1)+"はいくつ？>");
+ 10       int dare=new java.util.Scanner(System.in).nestInt();
+ 11       data[i]=new int[dare];
+ 12       for(int j=0;j<data[i].length;j++){
+ 13         System.out.print(j+1+"どこではいくつ？>");
+ 14         int score=new Scanner(System.in).nextInt();
+ 15         data[i][j]=score;
+ 16         for(int k=0;k<;k++){
+ 17           System.out.print(j+1+何をしたはいくつ？>");         
+ 18           int score=new Scanner(System.in).nextInt();
+ 19           data[i][j]=score;
+ 20           } 
+ 21         }   
+ 22       }
+ 23       System.out.println("");
+ 24       for(int i=0;i<data.length;i++){
+ 25         for(int j=0;j<data[i].length;j++){
+ 26           System.out.printf("%4d",data[i][j]);
+ 27         }
+ 28         System.out.println();
+-- INSERT -       -
+
+
+コミットして
+プッシュして
+プルリク投げる
+
