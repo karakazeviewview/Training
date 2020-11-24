@@ -1,4 +1,4 @@
-import java.util.*;
+importz java.util.*;
   2 public class Game5W{
   3   public static void main(String[] args){
   4     System.out.print("いつはいくつ？>");
