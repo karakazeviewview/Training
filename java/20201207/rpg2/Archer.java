@@ -12,6 +12,6 @@ public class Archer{
 	}
 
 	public void shootArrow(){
-		System.out.println("Archer"+this.no+"は矢を放った！");
+		System.out.println("Archer"+(this.no+getTotalArcher())+"は矢を放った！");
 	}
 }

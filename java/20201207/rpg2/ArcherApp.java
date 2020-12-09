@@ -12,6 +12,9 @@ public class ArcherApp{
 				case 2:
 					System.out.println("Archerクラスから"+Archer.getTotalArcher()+"人のアーチャーが生成されました");
 					break;
+					case 3:
+					getShootArrow();
+					break;
 				default:
 					System.out.println("アプリケーションを終了します");
 					s.close();
