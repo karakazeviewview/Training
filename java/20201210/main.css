@@ -1,0 +1,10 @@
+#out{
+	text-align:center;
+	 display:inline-block;
+	 background-color:yellow;
+	 width:600px;
+	 height:300px;
+	 border:100px gray  solid;
+	 line-height:300px;
+	 font-size:60px;
+}
