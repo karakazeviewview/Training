@@ -1,0 +1,136 @@
+20201214月曜
+1時間目
+p670
+例外処理
+finalyブロック
+apend trueでどんどん書き加えていく
+delete inner temae
+delete inner {
+
+
+
+2時間目
+trows で例外の可能性を宣言
+
+
+3時間目
+オーバーライドする際の修飾子は、同じか弱める方向にしか変更できない。public を必須でつける。
+
+0.アプリ実行,1.USBデバイス接続,2.終わり>0
+アプリケーションを実行する
+0.アプリ実行,1.USBデバイス接続,2.終わり>1
+どのデバイスを接続しますか0.マウス、1.メモリー、2.カードリーダー＞0
+USB接続にてマウス操作ができます。
+0.アプリ実行,1.USBデバイス接続,2.終わり>1
+どのデバイスを接続しますか0.マウス、1.メモリー、2.カードリーダー＞1
+USB接続にてデータを保存できます。
+0.アプリ実行,1.USBデバイス接続,2.終わり>1
+どのデバイスを接続しますか0.マウス、1.メモリー、2.カードリーダー＞2
+USB接続にてSDカードの読み書きができます。
+0.アプリ実行,1.USBデバイス接続,2.終わり>2
+アプリケーションを終了します。
+
+4時間目
+何が来るかわからない。usbの規格を満たすクラスをたくさん作る。
+
+
+mport java.util.*;
+public class PCApp{
+	public static void main(String[] args){
+		PC pc=new PC();
+		List<UsbConnectable> usbList=new ArrayList<>();
+		usbList.add(new Mouse());
+		usbList.add(new Memory());
+		usbList.add(new CardReader());
+		Scanner sc=new Scanner(System.in);
+		while(true){
+			System.out.print("0.アプリ実行,1.USBデバイス接続,2.終わり>");
+			int select=sc.nextInt();
+			switch(select){
+			case 0:
+				pc.execApp();
+				break;
+			case 1:
+				System.out.print("どのデバイスを接続しますか0.マウス、1.メモリー、2.カードリーダー＞");
+				int index=sc.nextInt();
+				UsbConnectable usb=usbList.get(index);
+				pc.setDevice(usb);
+				pc.usb();
+				break;
+			default:
+				System.out.println("アプリケーションを終了します");
+				return;
+			}
+		}
+	}
+}
+
+
+Q1
+usb接続ができることを意味するインターフェイスUsbConnectable、
+それを実装するクラスMouse、Memory、CardReaderを作成する。
+そして、PCクラスを作成し、アプリケーションクラスにて実行例となるようなプログラムを作成する。
+
+■インタフェース：UsbConnectable
+
+＜抽象メソッド＞
+usbConnect()
+
+■一般クラス：Mouse(実装：UsbConnectable)
+
+＜実装メソッド＞
+public void usbConnect() {
+System.out.println(“USB接続にてマウス操作ができます。”);
+}
+■一般クラス：Memory(実装：UsbConnectable)
+
+＜実装メソッド＞
+public void usbConnect() {
+System.out.println(“USB接続にてデータを保存できます。”);
+}
+■一般クラス：CardReader(実装：UsbConnectable)
+
+＜実装メソッド＞
+public void usbConnect() {
+System.out.println(“USB接続にてSDカードの読み書きができます。”);
+}
+■一般クラス：PC
+
+＜フィールド変数＞
+UsbConnectable device;
+
+＜メソッド＞
+public void execApp(){
+System.out.println(“アプリケーションを実行する”);
+}
+public void usb(){
+this.device.usbConnect();
+}
+public void setDevice(UsbConnectable device){
+this.device=device;
+}
+
+　■アプリケーションクラス：PCApp
+実行例の処理ができるよう記述する。
+
+
+
+
+5時間目
+
+public class PC{
+	App app;
+	UsbConnectable device;
+	public void execApp(){
+		this.app.doApp();
+	}
+	public void setApp(App app){
+		this.app=app;
+	}
+	public void usb(){
+		this.device.usbConnect();
+	}
+	public void setDevice(UsbConnectable device){
+		this.device=device;
+	}
+}j

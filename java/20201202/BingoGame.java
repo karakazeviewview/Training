@@ -27,12 +27,14 @@ public class BingoGame{
 		}
 		return card;
 	}
-
+/*
 	static void arrShuffle(int[] nums){
 		Random rand=new Random();
-		for(int i=0;i<nums.length
+		for(int i=0;i<nums.length;i++){
+			i
+		}
 	}
-
+*/
 	static void showCard(int[][] card){
 		for(int i=0;i<card.length;i++){
 			for(int j=0;j<card[i].length;j++){

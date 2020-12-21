@@ -22,8 +22,9 @@ for(Matango m:ms){
 System.out.println(h.name+"のHP"+h.hp);
 h.attack(ms[0]);
 */
-//Character c=new Character();
-//Dancer dancer=new Dancer();
+Character c=new Character();
+Dancer dancer=new Dancer();
+/*
 Goblin goblin=new Goblin();
 Warewolf warewolf=new Warewolf();
 DeathBat deathBat=new DeathBat();
@@ -33,5 +34,6 @@ deathBat.attack();
 goblin.run();
 warewolf.run();
 deathBat.run();
+*/
 	}
 }

@@ -1,4 +1,5 @@
-public abstract class Character{
+//public abstract class Character{
+public class Character{
 	String name;
 	int hp;
 	public void run(){
